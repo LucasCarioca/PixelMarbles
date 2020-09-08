@@ -115,21 +115,15 @@
 		DF01440124FF57A1004724CA /* PixelMarbles */ = {
 			isa = PBXGroup;
 			children = (
+				DFD2D5AA25073F6A00209187 /* scenes */,
+				DFD2D5A925073F2300209187 /* particles */,
+				DFD2D5AC25073FE700209187 /* settings */,
+				DF01440F24FF57A3004724CA /* Assets.xcassets */,
 				DF01440224FF57A1004724CA /* AppDelegate.swift */,
-				DF01440424FF57A1004724CA /* GameScene.sks */,
-				DF01440824FF57A1004724CA /* GameScene.swift */,
-				DF59DA772505D3E50011F8F4 /* GameBallList.swift */,
-				DF12D5242501AC6E00492B2A /* explosion.sks */,
-				DF59DA872505E3E60011F8F4 /* starSparkle.sks */,
-				DF59DA892505E6C30011F8F4 /* bombExplosion.sks */,
-				DF59DA812505E0640011F8F4 /* bombSmoke.sks */,
 				DF01440A24FF57A1004724CA /* GameViewController.swift */,
 				DF01440C24FF57A1004724CA /* Main.storyboard */,
-				DF01440F24FF57A3004724CA /* Assets.xcassets */,
 				DF01441124FF57A3004724CA /* LaunchScreen.storyboard */,
 				DF01441424FF57A3004724CA /* Info.plist */,
-				DF59DA73250551010011F8F4 /* DifficultyLevel.swift */,
-				DF59DA752505CB110011F8F4 /* HighScore.swift */,
 			);
 			path = PixelMarbles;
 			sourceTree = "<group>";
@@ -150,6 +144,44 @@
 				DF01442A24FF57A3004724CA /* Info.plist */,
 			);
 			path = PixelMarblesUITests;
+			sourceTree = "<group>";
+		};
+		DFD2D5A925073F2300209187 /* particles */ = {
+			isa = PBXGroup;
+			children = (
+				DF59DA872505E3E60011F8F4 /* starSparkle.sks */,
+				DF59DA892505E6C30011F8F4 /* bombExplosion.sks */,
+				DF59DA812505E0640011F8F4 /* bombSmoke.sks */,
+				DF12D5242501AC6E00492B2A /* explosion.sks */,
+			);
+			path = particles;
+			sourceTree = "<group>";
+		};
+		DFD2D5AA25073F6A00209187 /* scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DFD2D5AB25073F8400209187 /* game */,
+			);
+			path = scenes;
+			sourceTree = "<group>";
+		};
+		DFD2D5AB25073F8400209187 /* game */ = {
+			isa = PBXGroup;
+			children = (
+				DF59DA772505D3E50011F8F4 /* GameBallList.swift */,
+				DF01440424FF57A1004724CA /* GameScene.sks */,
+				DF01440824FF57A1004724CA /* GameScene.swift */,
+			);
+			path = game;
+			sourceTree = "<group>";
+		};
+		DFD2D5AC25073FE700209187 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				DF59DA73250551010011F8F4 /* DifficultyLevel.swift */,
+				DF59DA752505CB110011F8F4 /* HighScore.swift */,
+			);
+			path = settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
