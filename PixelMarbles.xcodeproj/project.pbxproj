@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF01440324FF57A1004724CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF01440224FF57A1004724CA /* AppDelegate.swift */; };
+		DF01440524FF57A1004724CA /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DF01440424FF57A1004724CA /* GameScene.sks */; };
+		DF01440924FF57A1004724CA /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF01440824FF57A1004724CA /* GameScene.swift */; };
+		DF01440B24FF57A1004724CA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF01440A24FF57A1004724CA /* GameViewController.swift */; };
+		DF01440E24FF57A1004724CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF01440C24FF57A1004724CA /* Main.storyboard */; };
+		DF01441024FF57A3004724CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF01440F24FF57A3004724CA /* Assets.xcassets */; };
+		DF01441324FF57A3004724CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF01441124FF57A3004724CA /* LaunchScreen.storyboard */; };
+		DF01441E24FF57A3004724CA /* StellarQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF01441D24FF57A3004724CA /* StellarQuestTests.swift */; };
+		DF01442924FF57A3004724CA /* StellarQuestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF01442824FF57A3004724CA /* StellarQuestUITests.swift */; };
+		DF12D5252501AC6E00492B2A /* explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = DF12D5242501AC6E00492B2A /* explosion.sks */; };
+		DF59DA74250551010011F8F4 /* DifficultyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF59DA73250551010011F8F4 /* DifficultyLevel.swift */; };
+		DF59DA762505CB110011F8F4 /* HighScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF59DA752505CB110011F8F4 /* HighScore.swift */; };
+		DF59DA782505D3E50011F8F4 /* GameBallList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF59DA772505D3E50011F8F4 /* GameBallList.swift */; };
+		DF59DA822505E0640011F8F4 /* bombSmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = DF59DA812505E0640011F8F4 /* bombSmoke.sks */; };
+		DF59DA882505E3E60011F8F4 /* starSparkle.sks in Resources */ = {isa = PBXBuildFile; fileRef = DF59DA872505E3E60011F8F4 /* starSparkle.sks */; };
+		DF59DA8A2505E6C30011F8F4 /* bombExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = DF59DA892505E6C30011F8F4 /* bombExplosion.sks */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF01441A24FF57A3004724CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF0143F724FF57A1004724CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF0143FE24FF57A1004724CA;
+			remoteInfo = StellarQuest;
+		};
+		DF01442524FF57A3004724CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF0143F724FF57A1004724CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF0143FE24FF57A1004724CA;
+			remoteInfo = StellarQuest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF0143FF24FF57A1004724CA /* PixelMarbles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixelMarbles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF01440224FF57A1004724CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF01440424FF57A1004724CA /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		DF01440824FF57A1004724CA /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		DF01440A24FF57A1004724CA /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		DF01440D24FF57A1004724CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF01440F24FF57A3004724CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF01441224FF57A3004724CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF01441424FF57A3004724CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF01441924FF57A3004724CA /* PixelMarblesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelMarblesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF01441D24FF57A3004724CA /* StellarQuestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StellarQuestTests.swift; sourceTree = "<group>"; };
+		DF01441F24FF57A3004724CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF01442424FF57A3004724CA /* PixelMarblesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelMarblesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF01442824FF57A3004724CA /* StellarQuestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StellarQuestUITests.swift; sourceTree = "<group>"; };
+		DF01442A24FF57A3004724CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF12D5242501AC6E00492B2A /* explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = explosion.sks; sourceTree = "<group>"; };
+		DF59DA73250551010011F8F4 /* DifficultyLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyLevel.swift; sourceTree = "<group>"; };
+		DF59DA752505CB110011F8F4 /* HighScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScore.swift; sourceTree = "<group>"; };
+		DF59DA772505D3E50011F8F4 /* GameBallList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBallList.swift; sourceTree = "<group>"; };
+		DF59DA812505E0640011F8F4 /* bombSmoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = bombSmoke.sks; sourceTree = "<group>"; };
+		DF59DA872505E3E60011F8F4 /* starSparkle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = starSparkle.sks; sourceTree = "<group>"; };
+		DF59DA892505E6C30011F8F4 /* bombExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = bombExplosion.sks; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF0143FC24FF57A1004724CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF01441624FF57A3004724CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF01442124FF57A3004724CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF0143F624FF57A1004724CA = {
+			isa = PBXGroup;
+			children = (
+				DF01440124FF57A1004724CA /* PixelMarbles */,
+				DF01441C24FF57A3004724CA /* PixelMarblesTests */,
+				DF01442724FF57A3004724CA /* PixelMarblesUITests */,
+				DF01440024FF57A1004724CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF01440024FF57A1004724CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF0143FF24FF57A1004724CA /* PixelMarbles.app */,
+				DF01441924FF57A3004724CA /* PixelMarblesTests.xctest */,
+				DF01442424FF57A3004724CA /* PixelMarblesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF01440124FF57A1004724CA /* PixelMarbles */ = {
+			isa = PBXGroup;
+			children = (
+				DF01440224FF57A1004724CA /* AppDelegate.swift */,
+				DF01440424FF57A1004724CA /* GameScene.sks */,
+				DF01440824FF57A1004724CA /* GameScene.swift */,
+				DF59DA772505D3E50011F8F4 /* GameBallList.swift */,
+				DF12D5242501AC6E00492B2A /* explosion.sks */,
+				DF59DA872505E3E60011F8F4 /* starSparkle.sks */,
+				DF59DA892505E6C30011F8F4 /* bombExplosion.sks */,
+				DF59DA812505E0640011F8F4 /* bombSmoke.sks */,
+				DF01440A24FF57A1004724CA /* GameViewController.swift */,
+				DF01440C24FF57A1004724CA /* Main.storyboard */,
+				DF01440F24FF57A3004724CA /* Assets.xcassets */,
+				DF01441124FF57A3004724CA /* LaunchScreen.storyboard */,
+				DF01441424FF57A3004724CA /* Info.plist */,
+				DF59DA73250551010011F8F4 /* DifficultyLevel.swift */,
+				DF59DA752505CB110011F8F4 /* HighScore.swift */,
+			);
+			path = PixelMarbles;
+			sourceTree = "<group>";
+		};
+		DF01441C24FF57A3004724CA /* PixelMarblesTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF01441D24FF57A3004724CA /* StellarQuestTests.swift */,
+				DF01441F24FF57A3004724CA /* Info.plist */,
+			);
+			path = PixelMarblesTests;
+			sourceTree = "<group>";
+		};
+		DF01442724FF57A3004724CA /* PixelMarblesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DF01442824FF57A3004724CA /* StellarQuestUITests.swift */,
+				DF01442A24FF57A3004724CA /* Info.plist */,
+			);
+			path = PixelMarblesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF0143FE24FF57A1004724CA /* PixelMarbles */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF01442D24FF57A3004724CA /* Build configuration list for PBXNativeTarget "PixelMarbles" */;
+			buildPhases = (
+				DF0143FB24FF57A1004724CA /* Sources */,
+				DF0143FC24FF57A1004724CA /* Frameworks */,
+				DF0143FD24FF57A1004724CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PixelMarbles;
+			productName = StellarQuest;
+			productReference = DF0143FF24FF57A1004724CA /* PixelMarbles.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF01441824FF57A3004724CA /* PixelMarblesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF01443024FF57A3004724CA /* Build configuration list for PBXNativeTarget "PixelMarblesTests" */;
+			buildPhases = (
+				DF01441524FF57A3004724CA /* Sources */,
+				DF01441624FF57A3004724CA /* Frameworks */,
+				DF01441724FF57A3004724CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF01441B24FF57A3004724CA /* PBXTargetDependency */,
+			);
+			name = PixelMarblesTests;
+			productName = StellarQuestTests;
+			productReference = DF01441924FF57A3004724CA /* PixelMarblesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DF01442324FF57A3004724CA /* PixelMarblesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF01443324FF57A3004724CA /* Build configuration list for PBXNativeTarget "PixelMarblesUITests" */;
+			buildPhases = (
+				DF01442024FF57A3004724CA /* Sources */,
+				DF01442124FF57A3004724CA /* Frameworks */,
+				DF01442224FF57A3004724CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF01442624FF57A3004724CA /* PBXTargetDependency */,
+			);
+			name = PixelMarblesUITests;
+			productName = StellarQuestUITests;
+			productReference = DF01442424FF57A3004724CA /* PixelMarblesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF0143F724FF57A1004724CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Lucas Desouza";
+				TargetAttributes = {
+					DF0143FE24FF57A1004724CA = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					DF01441824FF57A3004724CA = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = DF0143FE24FF57A1004724CA;
+					};
+					DF01442324FF57A3004724CA = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = DF0143FE24FF57A1004724CA;
+					};
+				};
+			};
+			buildConfigurationList = DF0143FA24FF57A1004724CA /* Build configuration list for PBXProject "PixelMarbles" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF0143F624FF57A1004724CA;
+			productRefGroup = DF01440024FF57A1004724CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF0143FE24FF57A1004724CA /* PixelMarbles */,
+				DF01441824FF57A3004724CA /* PixelMarblesTests */,
+				DF01442324FF57A3004724CA /* PixelMarblesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF0143FD24FF57A1004724CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF01440E24FF57A1004724CA /* Main.storyboard in Resources */,
+				DF59DA8A2505E6C30011F8F4 /* bombExplosion.sks in Resources */,
+				DF59DA822505E0640011F8F4 /* bombSmoke.sks in Resources */,
+				DF01440524FF57A1004724CA /* GameScene.sks in Resources */,
+				DF01441024FF57A3004724CA /* Assets.xcassets in Resources */,
+				DF12D5252501AC6E00492B2A /* explosion.sks in Resources */,
+				DF01441324FF57A3004724CA /* LaunchScreen.storyboard in Resources */,
+				DF59DA882505E3E60011F8F4 /* starSparkle.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF01441724FF57A3004724CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF01442224FF57A3004724CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF0143FB24FF57A1004724CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF59DA782505D3E50011F8F4 /* GameBallList.swift in Sources */,
+				DF01440924FF57A1004724CA /* GameScene.swift in Sources */,
+				DF01440B24FF57A1004724CA /* GameViewController.swift in Sources */,
+				DF59DA74250551010011F8F4 /* DifficultyLevel.swift in Sources */,
+				DF01440324FF57A1004724CA /* AppDelegate.swift in Sources */,
+				DF59DA762505CB110011F8F4 /* HighScore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF01441524FF57A3004724CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF01441E24FF57A3004724CA /* StellarQuestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF01442024FF57A3004724CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF01442924FF57A3004724CA /* StellarQuestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF01441B24FF57A3004724CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF0143FE24FF57A1004724CA /* PixelMarbles */;
+			targetProxy = DF01441A24FF57A3004724CA /* PBXContainerItemProxy */;
+		};
+		DF01442624FF57A3004724CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF0143FE24FF57A1004724CA /* PixelMarbles */;
+			targetProxy = DF01442524FF57A3004724CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF01440C24FF57A1004724CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF01440D24FF57A1004724CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF01441124FF57A3004724CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF01441224FF57A3004724CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF01442B24FF57A3004724CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF01442C24FF57A3004724CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF01442E24FF57A3004724CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Y259ZT3SQK;
+				INFOPLIST_FILE = "$(SRCROOT)/PixelMarbles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.lucasdesouza.PixelMarbles;
+				PRODUCT_NAME = PixelMarbles;
+				PROVISIONING_PROFILE_SPECIFIER = PixelMarbles;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF01442F24FF57A3004724CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Y259ZT3SQK;
+				INFOPLIST_FILE = "$(SRCROOT)/PixelMarbles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.lucasdesouza.PixelMarbles;
+				PRODUCT_NAME = PixelMarbles;
+				PROVISIONING_PROFILE_SPECIFIER = PixelMarbles;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DF01443124FF57A3004724CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y259ZT3SQK;
+				INFOPLIST_FILE = StellarQuestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.lucasdesouza.StellarQuestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PixelMarbles.app/PixelMarbles";
+			};
+			name = Debug;
+		};
+		DF01443224FF57A3004724CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y259ZT3SQK;
+				INFOPLIST_FILE = StellarQuestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.lucasdesouza.StellarQuestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PixelMarbles.app/PixelMarbles";
+			};
+			name = Release;
+		};
+		DF01443424FF57A3004724CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y259ZT3SQK;
+				INFOPLIST_FILE = StellarQuestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.lucasdesouza.StellarQuestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StellarQuest;
+			};
+			name = Debug;
+		};
+		DF01443524FF57A3004724CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y259ZT3SQK;
+				INFOPLIST_FILE = StellarQuestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.lucasdesouza.StellarQuestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StellarQuest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF0143FA24FF57A1004724CA /* Build configuration list for PBXProject "PixelMarbles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF01442B24FF57A3004724CA /* Debug */,
+				DF01442C24FF57A3004724CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF01442D24FF57A3004724CA /* Build configuration list for PBXNativeTarget "PixelMarbles" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF01442E24FF57A3004724CA /* Debug */,
+				DF01442F24FF57A3004724CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF01443024FF57A3004724CA /* Build configuration list for PBXNativeTarget "PixelMarblesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF01443124FF57A3004724CA /* Debug */,
+				DF01443224FF57A3004724CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF01443324FF57A3004724CA /* Build configuration list for PBXNativeTarget "PixelMarblesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF01443424FF57A3004724CA /* Debug */,
+				DF01443524FF57A3004724CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF0143F724FF57A1004724CA /* Project object */;
+}
