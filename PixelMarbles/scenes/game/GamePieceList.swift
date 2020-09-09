@@ -8,14 +8,14 @@
 
 import Foundation
 
-class GameBallList {
+class GamePieceList {
     var list: [String]
     var difficulty: Difficulty
     static let balls = ["ballBlue", "ballGreen", "ballPurple", "ballRed", "ballYellow"]
     
     init(difficulty: Difficulty) {
         self.difficulty = difficulty
-        self.list = GameBallList.generateList(difficulty)
+        self.list = GamePieceList.generateList(difficulty)
     }
     
     static func generateList(_ difficulty: Difficulty) -> [String] {
@@ -33,19 +33,19 @@ class GameBallList {
     }
     
     func reset() {
-        self.list = GameBallList.generateList(difficulty)
+        self.list = GamePieceList.generateList(difficulty)
     }
     
     func changeDifficulty(to difficulty: Difficulty) {
         self.difficulty = difficulty
-        self.list = GameBallList.generateList(difficulty)
+        self.list = GamePieceList.generateList(difficulty)
     }
     
-    func hasNext() -> Bool {
+    func hasNextPiece() -> Bool {
         return list.count >= 1
     }
     
-    func getNextBall() -> String {
+    func getNextPiece() -> String {
         list.shuffle()
         return list.removeLast()
     }

@@ -45,7 +45,7 @@ class DifficultyController {
         return saveDifficulty(difficultyLevel: .easy)
     }
     
-    private static func createDifficulty(_ difficultyLevel: DifficultyLevel) -> Difficulty {
+    public static func createDifficulty(_ difficultyLevel: DifficultyLevel) -> Difficulty {
         switch difficultyLevel {
         case .easy:
             return Difficulty(starCount: 10, bombCount: 0,  level: difficultyLevel.rawValue)

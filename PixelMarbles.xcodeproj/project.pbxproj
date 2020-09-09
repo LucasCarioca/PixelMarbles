@@ -19,10 +19,16 @@
 		DF12D5252501AC6E00492B2A /* explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = DF12D5242501AC6E00492B2A /* explosion.sks */; };
 		DF59DA74250551010011F8F4 /* DifficultyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF59DA73250551010011F8F4 /* DifficultyLevel.swift */; };
 		DF59DA762505CB110011F8F4 /* HighScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF59DA752505CB110011F8F4 /* HighScore.swift */; };
-		DF59DA782505D3E50011F8F4 /* GameBallList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF59DA772505D3E50011F8F4 /* GameBallList.swift */; };
+		DF59DA782505D3E50011F8F4 /* GamePieceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF59DA772505D3E50011F8F4 /* GamePieceList.swift */; };
 		DF59DA822505E0640011F8F4 /* bombSmoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = DF59DA812505E0640011F8F4 /* bombSmoke.sks */; };
 		DF59DA882505E3E60011F8F4 /* starSparkle.sks in Resources */ = {isa = PBXBuildFile; fileRef = DF59DA872505E3E60011F8F4 /* starSparkle.sks */; };
 		DF59DA8A2505E6C30011F8F4 /* bombExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = DF59DA892505E6C30011F8F4 /* bombExplosion.sks */; };
+		DF7076CB25086D180087CFDC /* GameScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7076CA25086D180087CFDC /* GameScore.swift */; };
+		DFD2D5AE25085FEC00209187 /* GamePiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD2D5AD25085FEC00209187 /* GamePiece.swift */; };
+		DFD2D5B02508613300209187 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD2D5AF2508613300209187 /* Button.swift */; };
+		DFD2D5B2250861A500209187 /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD2D5B1250861A500209187 /* Ball.swift */; };
+		DFD2D5B4250861D300209187 /* Bomb.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD2D5B3250861D300209187 /* Bomb.swift */; };
+		DFD2D5B6250861FA00209187 /* Star.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD2D5B5250861FA00209187 /* Star.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,10 +67,16 @@
 		DF12D5242501AC6E00492B2A /* explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = explosion.sks; sourceTree = "<group>"; };
 		DF59DA73250551010011F8F4 /* DifficultyLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyLevel.swift; sourceTree = "<group>"; };
 		DF59DA752505CB110011F8F4 /* HighScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScore.swift; sourceTree = "<group>"; };
-		DF59DA772505D3E50011F8F4 /* GameBallList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBallList.swift; sourceTree = "<group>"; };
+		DF59DA772505D3E50011F8F4 /* GamePieceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePieceList.swift; sourceTree = "<group>"; };
 		DF59DA812505E0640011F8F4 /* bombSmoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = bombSmoke.sks; sourceTree = "<group>"; };
 		DF59DA872505E3E60011F8F4 /* starSparkle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = starSparkle.sks; sourceTree = "<group>"; };
 		DF59DA892505E6C30011F8F4 /* bombExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = bombExplosion.sks; sourceTree = "<group>"; };
+		DF7076CA25086D180087CFDC /* GameScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScore.swift; sourceTree = "<group>"; };
+		DFD2D5AD25085FEC00209187 /* GamePiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePiece.swift; sourceTree = "<group>"; };
+		DFD2D5AF2508613300209187 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		DFD2D5B1250861A500209187 /* Ball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
+		DFD2D5B3250861D300209187 /* Bomb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bomb.swift; sourceTree = "<group>"; };
+		DFD2D5B5250861FA00209187 /* Star.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Star.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,9 +180,15 @@
 		DFD2D5AB25073F8400209187 /* game */ = {
 			isa = PBXGroup;
 			children = (
-				DF59DA772505D3E50011F8F4 /* GameBallList.swift */,
+				DF59DA772505D3E50011F8F4 /* GamePieceList.swift */,
 				DF01440424FF57A1004724CA /* GameScene.sks */,
 				DF01440824FF57A1004724CA /* GameScene.swift */,
+				DFD2D5AD25085FEC00209187 /* GamePiece.swift */,
+				DFD2D5B1250861A500209187 /* Ball.swift */,
+				DFD2D5B3250861D300209187 /* Bomb.swift */,
+				DFD2D5B5250861FA00209187 /* Star.swift */,
+				DFD2D5AF2508613300209187 /* Button.swift */,
+				DF7076CA25086D180087CFDC /* GameScore.swift */,
 			);
 			path = game;
 			sourceTree = "<group>";
@@ -320,12 +338,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF59DA782505D3E50011F8F4 /* GameBallList.swift in Sources */,
+				DF59DA782505D3E50011F8F4 /* GamePieceList.swift in Sources */,
+				DFD2D5B02508613300209187 /* Button.swift in Sources */,
+				DFD2D5B6250861FA00209187 /* Star.swift in Sources */,
 				DF01440924FF57A1004724CA /* GameScene.swift in Sources */,
+				DFD2D5B4250861D300209187 /* Bomb.swift in Sources */,
 				DF01440B24FF57A1004724CA /* GameViewController.swift in Sources */,
 				DF59DA74250551010011F8F4 /* DifficultyLevel.swift in Sources */,
+				DF7076CB25086D180087CFDC /* GameScore.swift in Sources */,
 				DF01440324FF57A1004724CA /* AppDelegate.swift in Sources */,
+				DFD2D5B2250861A500209187 /* Ball.swift in Sources */,
 				DF59DA762505CB110011F8F4 /* HighScore.swift in Sources */,
+				DFD2D5AE25085FEC00209187 /* GamePiece.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
